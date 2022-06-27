@@ -10,9 +10,33 @@
 		1B0225E528685BB400A1BDF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0225E428685BB400A1BDF1 /* AppDelegate.swift */; };
 		1B0225E728685BB400A1BDF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0225E628685BB400A1BDF1 /* SceneDelegate.swift */; };
 		1B0225E928685BB400A1BDF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0225E828685BB400A1BDF1 /* ViewController.swift */; };
-		1B0225EC28685BB400A1BDF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0225EA28685BB400A1BDF1 /* Main.storyboard */; };
 		1B0225EE28685BB900A1BDF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B0225ED28685BB900A1BDF1 /* Assets.xcassets */; };
 		1B0225F128685BB900A1BDF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0225EF28685BB900A1BDF1 /* LaunchScreen.storyboard */; };
+		1B0225FD28685F4C00A1BDF1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0225FC28685F4C00A1BDF1 /* UIColor+Extension.swift */; };
+		1B022602286888A500A1BDF1 /* SearchTableVIewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B022601286888A500A1BDF1 /* SearchTableVIewCell.swift */; };
+		1B022605286888C600A1BDF1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1B022604286888C600A1BDF1 /* SnapKit */; };
+		1B022608286888D100A1BDF1 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 1B022607286888D100A1BDF1 /* JGProgressHUD */; };
+		1B02260B286888DD00A1BDF1 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1B02260A286888DD00A1BDF1 /* IQKeyboardManagerSwift */; };
+		1B02260E286888E800A1BDF1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1B02260D286888E800A1BDF1 /* Kingfisher */; };
+		1B0226112868894E00A1BDF1 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 1B0226102868894E00A1BDF1 /* Realm */; };
+		1B02261428688A0C00A1BDF1 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02261328688A0C00A1BDF1 /* Reusable.swift */; };
+		1B02261628688A2800A1BDF1 /* BaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02261528688A2800A1BDF1 /* BaseUIView.swift */; };
+		1B02261828688A4700A1BDF1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02261728688A4700A1BDF1 /* BaseViewController.swift */; };
+		1B02261A28688A7100A1BDF1 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02261928688A7100A1BDF1 /* UIImageView+Extension.swift */; };
+		1B02261C28688A9700A1BDF1 /* Alert+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02261B28688A9700A1BDF1 /* Alert+Extension.swift */; };
+		1B02261E28688AB300A1BDF1 /* ImageEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02261D28688AB300A1BDF1 /* ImageEnum.swift */; };
+		1B02262028688ADE00A1BDF1 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02261F28688ADE00A1BDF1 /* URL+Extension.swift */; };
+		1B02262228688B2100A1BDF1 /* APIEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02262128688B2100A1BDF1 /* APIEnums.swift */; };
+		1B02262528688B5C00A1BDF1 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02262428688B5C00A1BDF1 /* Observable.swift */; };
+		1B02262728688B6E00A1BDF1 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02262628688B6E00A1BDF1 /* Config.swift */; };
+		1B02262B28692CC700A1BDF1 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02262A28692CC700A1BDF1 /* UITableViewCell+Extension.swift */; };
+		1B02262E286936B900A1BDF1 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02262D286936B900A1BDF1 /* APIService.swift */; };
+		1B022630286936EA00A1BDF1 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02262F286936EA00A1BDF1 /* Endpoint.swift */; };
+		1B0226322869393600A1BDF1 /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0226312869393600A1BDF1 /* URLSession+Extension.swift */; };
+		1B02263428693A4800A1BDF1 /* SearchEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02263328693A4800A1BDF1 /* SearchEnum.swift */; };
+		1B02263628693AB600A1BDF1 /* GitHubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02263528693AB600A1BDF1 /* GitHubModel.swift */; };
+		1B02263A2869407D00A1BDF1 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 1B0226392869407D00A1BDF1 /* Then */; };
+		1B02263C2869427200A1BDF1 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02263B2869427200A1BDF1 /* UIFont+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +44,30 @@
 		1B0225E428685BB400A1BDF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B0225E628685BB400A1BDF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1B0225E828685BB400A1BDF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1B0225EB28685BB400A1BDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B0225ED28685BB900A1BDF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B0225F028685BB900A1BDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B0225F228685BB900A1BDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B0225FC28685F4C00A1BDF1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		1B022601286888A500A1BDF1 /* SearchTableVIewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableVIewCell.swift; sourceTree = "<group>"; };
+		1B02261328688A0C00A1BDF1 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		1B02261528688A2800A1BDF1 /* BaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIView.swift; sourceTree = "<group>"; };
+		1B02261728688A4700A1BDF1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1B02261928688A7100A1BDF1 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		1B02261B28688A9700A1BDF1 /* Alert+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+Extension.swift"; sourceTree = "<group>"; };
+		1B02261D28688AB300A1BDF1 /* ImageEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEnum.swift; sourceTree = "<group>"; };
+		1B02261F28688ADE00A1BDF1 /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		1B02262128688B2100A1BDF1 /* APIEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnums.swift; sourceTree = "<group>"; };
+		1B02262428688B5C00A1BDF1 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		1B02262628688B6E00A1BDF1 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		1B02262828688BAF00A1BDF1 /* developeConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = developeConfig.xcconfig; sourceTree = "<group>"; };
+		1B02262A28692CC700A1BDF1 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		1B02262C286930F600A1BDF1 /* releaseConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = releaseConfig.xcconfig; sourceTree = "<group>"; };
+		1B02262D286936B900A1BDF1 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		1B02262F286936EA00A1BDF1 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		1B0226312869393600A1BDF1 /* URLSession+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
+		1B02263328693A4800A1BDF1 /* SearchEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEnum.swift; sourceTree = "<group>"; };
+		1B02263528693AB600A1BDF1 /* GitHubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubModel.swift; sourceTree = "<group>"; };
+		1B02263B2869427200A1BDF1 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +75,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B02260E286888E800A1BDF1 /* Kingfisher in Frameworks */,
+				1B02263A2869407D00A1BDF1 /* Then in Frameworks */,
+				1B022608286888D100A1BDF1 /* JGProgressHUD in Frameworks */,
+				1B022605286888C600A1BDF1 /* SnapKit in Frameworks */,
+				1B02260B286888DD00A1BDF1 /* IQKeyboardManagerSwift in Frameworks */,
+				1B0226112868894E00A1BDF1 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +106,91 @@
 		1B0225E328685BB400A1BDF1 /* MyGitExample */ = {
 			isa = PBXGroup;
 			children = (
+				1B02262928688BB900A1BDF1 /* Base */,
+				1B02262328688B4D00A1BDF1 /* Common */,
+				1B0226002868887800A1BDF1 /* CustomCellView */,
+				1B0225FF2868886D00A1BDF1 /* Enums */,
+				1B0225FB28685F4000A1BDF1 /* Extension */,
+				1B02263728693ED000A1BDF1 /* Network */,
+				1B022612286889DD00A1BDF1 /* Protocol */,
 				1B0225E428685BB400A1BDF1 /* AppDelegate.swift */,
 				1B0225E628685BB400A1BDF1 /* SceneDelegate.swift */,
 				1B0225E828685BB400A1BDF1 /* ViewController.swift */,
-				1B0225EA28685BB400A1BDF1 /* Main.storyboard */,
 				1B0225ED28685BB900A1BDF1 /* Assets.xcassets */,
 				1B0225EF28685BB900A1BDF1 /* LaunchScreen.storyboard */,
 				1B0225F228685BB900A1BDF1 /* Info.plist */,
+				1B02262828688BAF00A1BDF1 /* developeConfig.xcconfig */,
+				1B02262C286930F600A1BDF1 /* releaseConfig.xcconfig */,
 			);
 			path = MyGitExample;
+			sourceTree = "<group>";
+		};
+		1B0225FB28685F4000A1BDF1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1B0225FC28685F4C00A1BDF1 /* UIColor+Extension.swift */,
+				1B02263B2869427200A1BDF1 /* UIFont+Extension.swift */,
+				1B02261928688A7100A1BDF1 /* UIImageView+Extension.swift */,
+				1B02261B28688A9700A1BDF1 /* Alert+Extension.swift */,
+				1B02261F28688ADE00A1BDF1 /* URL+Extension.swift */,
+				1B02262A28692CC700A1BDF1 /* UITableViewCell+Extension.swift */,
+				1B0226312869393600A1BDF1 /* URLSession+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1B0225FF2868886D00A1BDF1 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				1B02261D28688AB300A1BDF1 /* ImageEnum.swift */,
+				1B02262128688B2100A1BDF1 /* APIEnums.swift */,
+				1B02263328693A4800A1BDF1 /* SearchEnum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		1B0226002868887800A1BDF1 /* CustomCellView */ = {
+			isa = PBXGroup;
+			children = (
+				1B022601286888A500A1BDF1 /* SearchTableVIewCell.swift */,
+			);
+			path = CustomCellView;
+			sourceTree = "<group>";
+		};
+		1B022612286889DD00A1BDF1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				1B02261328688A0C00A1BDF1 /* Reusable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		1B02262328688B4D00A1BDF1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1B02262428688B5C00A1BDF1 /* Observable.swift */,
+				1B02262628688B6E00A1BDF1 /* Config.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1B02262928688BB900A1BDF1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1B02261528688A2800A1BDF1 /* BaseUIView.swift */,
+				1B02261728688A4700A1BDF1 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1B02263728693ED000A1BDF1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1B02262D286936B900A1BDF1 /* APIService.swift */,
+				1B02262F286936EA00A1BDF1 /* Endpoint.swift */,
+				1B02263528693AB600A1BDF1 /* GitHubModel.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +209,14 @@
 			dependencies = (
 			);
 			name = MyGitExample;
+			packageProductDependencies = (
+				1B022604286888C600A1BDF1 /* SnapKit */,
+				1B022607286888D100A1BDF1 /* JGProgressHUD */,
+				1B02260A286888DD00A1BDF1 /* IQKeyboardManagerSwift */,
+				1B02260D286888E800A1BDF1 /* Kingfisher */,
+				1B0226102868894E00A1BDF1 /* Realm */,
+				1B0226392869407D00A1BDF1 /* Then */,
+			);
 			productName = MyGitExample;
 			productReference = 1B0225E128685BB400A1BDF1 /* MyGitExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +245,14 @@
 				Base,
 			);
 			mainGroup = 1B0225D828685BB400A1BDF1;
+			packageReferences = (
+				1B022603286888C500A1BDF1 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				1B022606286888D100A1BDF1 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
+				1B022609286888DD00A1BDF1 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				1B02260C286888E800A1BDF1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				1B02260F2868894E00A1BDF1 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				1B0226382869407D00A1BDF1 /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = 1B0225E228685BB400A1BDF1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +269,6 @@
 			files = (
 				1B0225F128685BB900A1BDF1 /* LaunchScreen.storyboard in Resources */,
 				1B0225EE28685BB900A1BDF1 /* Assets.xcassets in Resources */,
-				1B0225EC28685BB400A1BDF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +279,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B02262E286936B900A1BDF1 /* APIService.swift in Sources */,
+				1B02261E28688AB300A1BDF1 /* ImageEnum.swift in Sources */,
+				1B02261428688A0C00A1BDF1 /* Reusable.swift in Sources */,
+				1B02262728688B6E00A1BDF1 /* Config.swift in Sources */,
+				1B02262B28692CC700A1BDF1 /* UITableViewCell+Extension.swift in Sources */,
 				1B0225E928685BB400A1BDF1 /* ViewController.swift in Sources */,
+				1B02261628688A2800A1BDF1 /* BaseUIView.swift in Sources */,
+				1B02261A28688A7100A1BDF1 /* UIImageView+Extension.swift in Sources */,
+				1B02262028688ADE00A1BDF1 /* URL+Extension.swift in Sources */,
 				1B0225E528685BB400A1BDF1 /* AppDelegate.swift in Sources */,
+				1B02263C2869427200A1BDF1 /* UIFont+Extension.swift in Sources */,
+				1B022630286936EA00A1BDF1 /* Endpoint.swift in Sources */,
+				1B02263628693AB600A1BDF1 /* GitHubModel.swift in Sources */,
 				1B0225E728685BB400A1BDF1 /* SceneDelegate.swift in Sources */,
+				1B0226322869393600A1BDF1 /* URLSession+Extension.swift in Sources */,
+				1B02261C28688A9700A1BDF1 /* Alert+Extension.swift in Sources */,
+				1B02261828688A4700A1BDF1 /* BaseViewController.swift in Sources */,
+				1B02262528688B5C00A1BDF1 /* Observable.swift in Sources */,
+				1B02262228688B2100A1BDF1 /* APIEnums.swift in Sources */,
+				1B022602286888A500A1BDF1 /* SearchTableVIewCell.swift in Sources */,
+				1B02263428693A4800A1BDF1 /* SearchEnum.swift in Sources */,
+				1B0225FD28685F4C00A1BDF1 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1B0225EA28685BB400A1BDF1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B0225EB28685BB400A1BDF1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1B0225EF28685BB900A1BDF1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +434,7 @@
 		};
 		1B0225F628685BB900A1BDF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B02262828688BAF00A1BDF1 /* developeConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +462,7 @@
 		};
 		1B0225F728685BB900A1BDF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B02262C286930F600A1BDF1 /* releaseConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -356,6 +510,90 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B022603286888C500A1BDF1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		1B022606286888D100A1BDF1 /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		1B022609286888DD00A1BDF1 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		1B02260C286888E800A1BDF1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		1B02260F2868894E00A1BDF1 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.2.0;
+			};
+		};
+		1B0226382869407D00A1BDF1 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B022604286888C600A1BDF1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B022603286888C500A1BDF1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		1B022607286888D100A1BDF1 /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B022606286888D100A1BDF1 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
+		};
+		1B02260A286888DD00A1BDF1 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B022609286888DD00A1BDF1 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		1B02260D286888E800A1BDF1 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B02260C286888E800A1BDF1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		1B0226102868894E00A1BDF1 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B02260F2868894E00A1BDF1 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		1B0226392869407D00A1BDF1 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B0226382869407D00A1BDF1 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B0225D928685BB400A1BDF1 /* Project object */;
 }

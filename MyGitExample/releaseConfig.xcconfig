@@ -1,0 +1,11 @@
+//
+//  releaseConfig.xcconfig
+//  MyGitExample
+//
+//  Created by bro on 2022/06/27.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+GITHUB_KEY = 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
