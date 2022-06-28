@@ -11,7 +11,7 @@ import Kingfisher
 extension UIImageView {
     func setImage(imageUrl: String) {
         self.kf.setImage(
-            with: URL(string: imageUrl)
+            with: URL(string: imageUrl),
             placeholder: UIImage(systemName: SystemImage.icSearchNonW.rawValue)
         )
     }

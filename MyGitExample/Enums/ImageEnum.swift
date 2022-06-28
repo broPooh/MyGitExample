@@ -11,4 +11,5 @@ enum SystemImage: String {
     case icSearchNonW = "icSearchNonW"
     case icCancel = "icCancel"
     case xmark
+    case fillStar = "star.fill"
 }

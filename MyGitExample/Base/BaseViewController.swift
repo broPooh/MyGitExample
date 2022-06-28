@@ -56,7 +56,7 @@ class BaseViewController: UIViewController, Reusable {
     }
     
     func configure() {
-        view.backgroundColor = .white
+        view.backgroundColor = .mainBackground
     }
 
 }

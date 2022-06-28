@@ -37,6 +37,16 @@
 		1B02263628693AB600A1BDF1 /* GitHubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02263528693AB600A1BDF1 /* GitHubModel.swift */; };
 		1B02263A2869407D00A1BDF1 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 1B0226392869407D00A1BDF1 /* Then */; };
 		1B02263C2869427200A1BDF1 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02263B2869427200A1BDF1 /* UIFont+Extension.swift */; };
+		1B02263E286A90C800A1BDF1 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02263D286A90C800A1BDF1 /* CustomTabBar.swift */; };
+		1B022641286A918600A1BDF1 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B022640286A918600A1BDF1 /* UICollectionViewCell+Extension.swift */; };
+		1B022643286A948800A1BDF1 /* SizeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B022642286A948800A1BDF1 /* SizeEnum.swift */; };
+		1B022645286A950000A1BDF1 /* TabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B022644286A950000A1BDF1 /* TabCollectionViewCell.swift */; };
+		1B022647286A9B9600A1BDF1 /* PageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B022646286A9B9600A1BDF1 /* PageCollectionViewCell.swift */; };
+		1B022649286A9CD400A1BDF1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B022648286A9CD400A1BDF1 /* MainViewController.swift */; };
+		1B02264B286A9DD900A1BDF1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02264A286A9DD900A1BDF1 /* MainView.swift */; };
+		1B02264D286AA36C00A1BDF1 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02264C286AA36C00A1BDF1 /* MainViewModel.swift */; };
+		1B02264F286AA3CC00A1BDF1 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02264E286AA3CC00A1BDF1 /* ViewModelType.swift */; };
+		1B022651286AAF7800A1BDF1 /* UISearchBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B022650286AAF7800A1BDF1 /* UISearchBar+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +78,16 @@
 		1B02263328693A4800A1BDF1 /* SearchEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEnum.swift; sourceTree = "<group>"; };
 		1B02263528693AB600A1BDF1 /* GitHubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubModel.swift; sourceTree = "<group>"; };
 		1B02263B2869427200A1BDF1 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		1B02263D286A90C800A1BDF1 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		1B022640286A918600A1BDF1 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
+		1B022642286A948800A1BDF1 /* SizeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeEnum.swift; sourceTree = "<group>"; };
+		1B022644286A950000A1BDF1 /* TabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCollectionViewCell.swift; sourceTree = "<group>"; };
+		1B022646286A9B9600A1BDF1 /* PageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCollectionViewCell.swift; sourceTree = "<group>"; };
+		1B022648286A9CD400A1BDF1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1B02264A286A9DD900A1BDF1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1B02264C286AA36C00A1BDF1 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		1B02264E286AA3CC00A1BDF1 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		1B022650286AAF7800A1BDF1 /* UISearchBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +136,10 @@
 				1B0225E428685BB400A1BDF1 /* AppDelegate.swift */,
 				1B0225E628685BB400A1BDF1 /* SceneDelegate.swift */,
 				1B0225E828685BB400A1BDF1 /* ViewController.swift */,
+				1B022648286A9CD400A1BDF1 /* MainViewController.swift */,
+				1B02264A286A9DD900A1BDF1 /* MainView.swift */,
+				1B02264C286AA36C00A1BDF1 /* MainViewModel.swift */,
+				1B02263D286A90C800A1BDF1 /* CustomTabBar.swift */,
 				1B0225ED28685BB900A1BDF1 /* Assets.xcassets */,
 				1B0225EF28685BB900A1BDF1 /* LaunchScreen.storyboard */,
 				1B0225F228685BB900A1BDF1 /* Info.plist */,
@@ -134,7 +158,9 @@
 				1B02261B28688A9700A1BDF1 /* Alert+Extension.swift */,
 				1B02261F28688ADE00A1BDF1 /* URL+Extension.swift */,
 				1B02262A28692CC700A1BDF1 /* UITableViewCell+Extension.swift */,
+				1B022640286A918600A1BDF1 /* UICollectionViewCell+Extension.swift */,
 				1B0226312869393600A1BDF1 /* URLSession+Extension.swift */,
+				1B022650286AAF7800A1BDF1 /* UISearchBar+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -145,6 +171,7 @@
 				1B02261D28688AB300A1BDF1 /* ImageEnum.swift */,
 				1B02262128688B2100A1BDF1 /* APIEnums.swift */,
 				1B02263328693A4800A1BDF1 /* SearchEnum.swift */,
+				1B022642286A948800A1BDF1 /* SizeEnum.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -153,6 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				1B022601286888A500A1BDF1 /* SearchTableVIewCell.swift */,
+				1B022644286A950000A1BDF1 /* TabCollectionViewCell.swift */,
+				1B022646286A9B9600A1BDF1 /* PageCollectionViewCell.swift */,
 			);
 			path = CustomCellView;
 			sourceTree = "<group>";
@@ -161,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				1B02261328688A0C00A1BDF1 /* Reusable.swift */,
+				1B02264E286AA3CC00A1BDF1 /* ViewModelType.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -283,21 +313,31 @@
 				1B02261E28688AB300A1BDF1 /* ImageEnum.swift in Sources */,
 				1B02261428688A0C00A1BDF1 /* Reusable.swift in Sources */,
 				1B02262728688B6E00A1BDF1 /* Config.swift in Sources */,
+				1B022645286A950000A1BDF1 /* TabCollectionViewCell.swift in Sources */,
+				1B02264D286AA36C00A1BDF1 /* MainViewModel.swift in Sources */,
 				1B02262B28692CC700A1BDF1 /* UITableViewCell+Extension.swift in Sources */,
+				1B022651286AAF7800A1BDF1 /* UISearchBar+Extension.swift in Sources */,
+				1B02263E286A90C800A1BDF1 /* CustomTabBar.swift in Sources */,
+				1B022649286A9CD400A1BDF1 /* MainViewController.swift in Sources */,
 				1B0225E928685BB400A1BDF1 /* ViewController.swift in Sources */,
+				1B02264F286AA3CC00A1BDF1 /* ViewModelType.swift in Sources */,
 				1B02261628688A2800A1BDF1 /* BaseUIView.swift in Sources */,
 				1B02261A28688A7100A1BDF1 /* UIImageView+Extension.swift in Sources */,
 				1B02262028688ADE00A1BDF1 /* URL+Extension.swift in Sources */,
+				1B022647286A9B9600A1BDF1 /* PageCollectionViewCell.swift in Sources */,
 				1B0225E528685BB400A1BDF1 /* AppDelegate.swift in Sources */,
 				1B02263C2869427200A1BDF1 /* UIFont+Extension.swift in Sources */,
 				1B022630286936EA00A1BDF1 /* Endpoint.swift in Sources */,
 				1B02263628693AB600A1BDF1 /* GitHubModel.swift in Sources */,
 				1B0225E728685BB400A1BDF1 /* SceneDelegate.swift in Sources */,
+				1B022643286A948800A1BDF1 /* SizeEnum.swift in Sources */,
 				1B0226322869393600A1BDF1 /* URLSession+Extension.swift in Sources */,
 				1B02261C28688A9700A1BDF1 /* Alert+Extension.swift in Sources */,
 				1B02261828688A4700A1BDF1 /* BaseViewController.swift in Sources */,
 				1B02262528688B5C00A1BDF1 /* Observable.swift in Sources */,
 				1B02262228688B2100A1BDF1 /* APIEnums.swift in Sources */,
+				1B022641286A918600A1BDF1 /* UICollectionViewCell+Extension.swift in Sources */,
+				1B02264B286A9DD900A1BDF1 /* MainView.swift in Sources */,
 				1B022602286888A500A1BDF1 /* SearchTableVIewCell.swift in Sources */,
 				1B02263428693A4800A1BDF1 /* SearchEnum.swift in Sources */,
 				1B0225FD28685F4C00A1BDF1 /* UIColor+Extension.swift in Sources */,
@@ -368,7 +408,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -447,6 +487,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,6 +516,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

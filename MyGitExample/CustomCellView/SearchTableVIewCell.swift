@@ -26,7 +26,7 @@ final class SearchTableVIewCell: UITableViewCell, ViewRepresentable {
     }
     
     let favoriteButton = UIButton().then {
-        $0.setImage(UIImage(named: SystemImage.icSearchNonW.rawValue), for: .normal)
+        $0.setImage(UIImage(named: SystemImage.fillStar.rawValue), for: .normal)
     }
     
     
@@ -45,6 +45,33 @@ final class SearchTableVIewCell: UITableViewCell, ViewRepresentable {
     }
     
     func setupConstraints() {
+        
+        userImageView.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(10)
+            $0.leading.equalToSuperview().offset(10)
+            $0.bottom.equalToSuperview().offset(-10)
+            $0.width.equalTo(50)
+            $0.height.equalTo(50)
+        }
+        
+        nameLabel.snp.makeConstraints {
+            $0.top.equalTo(userImageView.snp.top)
+            $0.leading.equalTo(userImageView.snp.trailing).offset(10).priority(.low)
+            $0.bottom.equalTo(userImageView.snp.bottom)
+            $0.trailing.equalTo(favoriteButton.snp.leading).offset(-10)
+        }
+        
+        favoriteButton.snp.makeConstraints {
+            $0.top.equalTo(userImageView.snp.top)
+            $0.leading.equalTo(nameLabel.snp.trailing).offset(10)
+            $0.trailing.equalToSuperview().offset(-10)
+            $0.bottom.equalTo(userImageView.snp.bottom)
+            $0.width.equalTo(50)
+            $0.height.equalTo(50)
+        }
+    }
+    
+    func configure() {
         
     }
     

@@ -73,6 +73,26 @@ extension UIColor {
         }
     }()
     
+    static let searchIconColor: UIColor = {
+        if #available(iOS 13, *) {
+            return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
+                if UITraitCollection.userInterfaceStyle == .dark {
+                    // Return color for Dark Mode
+                    return rgbColor(red: 255, green: 255, blue: 255, alpha: 1)
+                    //return UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)
+                } else {
+                    // Return color for Light Mode
+                    return rgbColor(red: 0, green: 0, blue: 0, alpha: 1)
+                    //return UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0)
+                }
+            }
+        } else {
+            // Return fallback color for iOS 12 and lower
+            return rgbColor(red: 0, green: 0, blue: 0, alpha: 1)
+            //return UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0)
+        }
+    }()
+    
     static let toolbarActiveColor: UIColor = {
         if #available(iOS 13, *) {
             return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
@@ -110,6 +130,26 @@ extension UIColor {
             // Return fallback color for iOS 12 and lower
             return rgbColor(red: 199, green: 199, blue: 204, alpha: 1)
             //return UIColor(red: 199/255, green: 199/255, blue: 204/255, alpha: 1.0)
+        }
+    }()
+    
+    static let buttonImageColor: UIColor = {
+        if #available(iOS 13, *) {
+            return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
+                if UITraitCollection.userInterfaceStyle == .dark {
+                    // Return color for Dark Mode
+                    //return rgbColor(red: 255, green: 204, blue: 102, alpha: 1)
+                    return UIColor(named: "myTintColor")!
+                } else {
+                    // Return color for Light Mode
+                    //return rgbColor(red: 255, green: 204, blue: 102, alpha: 1)
+                    return UIColor(named: "myTintColor")!
+                }
+            }
+        } else {
+            // Return fallback color for iOS 12 and lower
+            //return rgbColor(red: 255, green: 204, blue: 102, alpha: 1)
+            return UIColor(named: "myTintColor")!
         }
     }()
     
