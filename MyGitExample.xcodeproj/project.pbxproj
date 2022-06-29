@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1B0225E528685BB400A1BDF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0225E428685BB400A1BDF1 /* AppDelegate.swift */; };
 		1B0225E728685BB400A1BDF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0225E628685BB400A1BDF1 /* SceneDelegate.swift */; };
-		1B0225E928685BB400A1BDF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0225E828685BB400A1BDF1 /* ViewController.swift */; };
 		1B0225EE28685BB900A1BDF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B0225ED28685BB900A1BDF1 /* Assets.xcassets */; };
 		1B0225F128685BB900A1BDF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0225EF28685BB900A1BDF1 /* LaunchScreen.storyboard */; };
 		1B0225FD28685F4C00A1BDF1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0225FC28685F4C00A1BDF1 /* UIColor+Extension.swift */; };
@@ -53,7 +52,6 @@
 		1B0225E128685BB400A1BDF1 /* MyGitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B0225E428685BB400A1BDF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B0225E628685BB400A1BDF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1B0225E828685BB400A1BDF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1B0225ED28685BB900A1BDF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B0225F028685BB900A1BDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B0225F228685BB900A1BDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,6 +124,7 @@
 		1B0225E328685BB400A1BDF1 /* MyGitExample */ = {
 			isa = PBXGroup;
 			children = (
+				1B5DAB1C286BCE2200F6122D /* Main */,
 				1B02262928688BB900A1BDF1 /* Base */,
 				1B02262328688B4D00A1BDF1 /* Common */,
 				1B0226002868887800A1BDF1 /* CustomCellView */,
@@ -135,10 +134,6 @@
 				1B022612286889DD00A1BDF1 /* Protocol */,
 				1B0225E428685BB400A1BDF1 /* AppDelegate.swift */,
 				1B0225E628685BB400A1BDF1 /* SceneDelegate.swift */,
-				1B0225E828685BB400A1BDF1 /* ViewController.swift */,
-				1B022648286A9CD400A1BDF1 /* MainViewController.swift */,
-				1B02264A286A9DD900A1BDF1 /* MainView.swift */,
-				1B02264C286AA36C00A1BDF1 /* MainViewModel.swift */,
 				1B02263D286A90C800A1BDF1 /* CustomTabBar.swift */,
 				1B0225ED28685BB900A1BDF1 /* Assets.xcassets */,
 				1B0225EF28685BB900A1BDF1 /* LaunchScreen.storyboard */,
@@ -221,6 +216,16 @@
 				1B02263528693AB600A1BDF1 /* GitHubModel.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		1B5DAB1C286BCE2200F6122D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1B02264A286A9DD900A1BDF1 /* MainView.swift */,
+				1B022648286A9CD400A1BDF1 /* MainViewController.swift */,
+				1B02264C286AA36C00A1BDF1 /* MainViewModel.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,7 +324,6 @@
 				1B022651286AAF7800A1BDF1 /* UISearchBar+Extension.swift in Sources */,
 				1B02263E286A90C800A1BDF1 /* CustomTabBar.swift in Sources */,
 				1B022649286A9CD400A1BDF1 /* MainViewController.swift in Sources */,
-				1B0225E928685BB400A1BDF1 /* ViewController.swift in Sources */,
 				1B02264F286AA3CC00A1BDF1 /* ViewModelType.swift in Sources */,
 				1B02261628688A2800A1BDF1 /* BaseUIView.swift in Sources */,
 				1B02261A28688A7100A1BDF1 /* UIImageView+Extension.swift in Sources */,
@@ -484,7 +488,6 @@
 				INFOPLIST_FILE = MyGitExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -503,7 +506,7 @@
 		};
 		1B0225F728685BB900A1BDF1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B02262C286930F600A1BDF1 /* releaseConfig.xcconfig */;
+			baseConfigurationReference = 1B02262828688BAF00A1BDF1 /* developeConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -513,7 +516,6 @@
 				INFOPLIST_FILE = MyGitExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

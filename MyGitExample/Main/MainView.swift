@@ -24,12 +24,17 @@ final class MainView: BaseUIView {
         $0.textField?.leftView?.tintColor = .searchIconColor
         $0.textField?.rightView?.tintColor = .searchIconColor
     }
-    let searchTableView = UITableView()
+    let searchTableView = UITableView().then {
+        
+        $0.register(SearchTableViewCell.self, forCellReuseIdentifier: SearchTableViewCell.reuseIdentifier)
+        $0.separatorStyle = .none
+    }
     
     let hud = JGProgressHUD()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        customTabConfig()
     }
     
     required init?(coder: NSCoder) {
@@ -45,7 +50,7 @@ final class MainView: BaseUIView {
     override func setupConstraints() {
         
         customTabBar.snp.makeConstraints {
-            $0.top.equalToSuperview()
+            $0.top.equalTo(safeAreaLayoutGuide)
             $0.leading.equalToSuperview()
             $0.trailing.equalToSuperview()
             $0.height.equalTo(TabBarSize.tabBarHeight)
@@ -62,8 +67,9 @@ final class MainView: BaseUIView {
             $0.top.equalTo(searchBar.snp.bottom).offset(SearchBarSize.topOffset)
             $0.leading.equalToSuperview()
             $0.trailing.equalToSuperview()
-            $0.bottom.equalToSuperview()
+            $0.bottom.equalTo(safeAreaLayoutGuide)
         }
+        
     }
     
     func showProgress() {
@@ -72,5 +78,9 @@ final class MainView: BaseUIView {
     
     func dissmissProgress() {
         hud.dismiss()
+    }
+    
+    func customTabConfig() {
+        customTabBar.customTabBarCollectionView.selectItem(at: IndexPath(item: 0, section: 0), animated: false, scrollPosition: [])
     }
 }

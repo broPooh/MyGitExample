@@ -13,7 +13,7 @@ extension UISearchBar {
             return self.searchTextField
         } else {
             // Fallback on earlier versions
-            return value(forKey: "_searchField") as? UITextField
+            return value(forKey: "_searchField") as? UITextField // value속성은 object c 속성이다. 찾아보기
         }
         return nil
     }

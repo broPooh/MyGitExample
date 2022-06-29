@@ -22,16 +22,19 @@ final class CustomTabBar: BaseUIView, Reusable {
     var delegate: CustomTabBarDelegate?
     let titles = ["API", "Local"]
     
-    let customTabBarCollectionView = UICollectionView().then {
+    let customTabBarCollectionView = UICollectionView(frame: .zero, collectionViewLayout: .init()).then {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        $0.frame = .zero
+        
         $0.collectionViewLayout = layout
         $0.backgroundColor = .white
         
         $0.showsHorizontalScrollIndicator = false
         $0.register(TabCollectionViewCell.self, forCellWithReuseIdentifier: TabCollectionViewCell.reuseIdentifier)
         $0.isScrollEnabled = false
+        
+        $0.indicatorStyle = .default
+        
         $0.selectItem(at: IndexPath(item: 0, section: 0), animated: false, scrollPosition: [])
     }
     
@@ -59,13 +62,15 @@ final class CustomTabBar: BaseUIView, Reusable {
             $0.leading.equalToSuperview()
             $0.trailing.equalToSuperview()
             $0.height.equalTo(TabBarSize.tabBarHeight)
+            //$0.bottom.equalTo(indicatorView.snp.top)
         }
         
         indicatorView.snp.makeConstraints {
             $0.width.equalTo(Int(TabBarSize.deviceWidth) / Int(TabBarSize.tabSize))
             $0.height.equalTo(TabBarSize.indicatorHeight)
             $0.leading.equalTo(customTabBarCollectionView.snp.leading)
-            $0.bottom.equalToSuperview()
+            $0.top.equalTo(customTabBarCollectionView.snp.bottom)
+            //$0.bottom.equalToSuperview()
         }
     }
     
@@ -77,6 +82,7 @@ final class CustomTabBar: BaseUIView, Reusable {
     func updateIndicatorView(scrollView: UIScrollView) {
         indicatorView.snp.updateConstraints {
             $0.leading.equalTo(Int(scrollView.contentOffset.x) / TabBarSize.tabSize)
+            //$0.leading.equalTo(Int(scrollView.contentOffset.x))
         }
     }
     
@@ -113,7 +119,8 @@ extension CustomTabBar: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        updateIndicatorView(scrollView: scrollView)
+        //update실패...
+        //updateIndicatorView(scrollView: scrollView)
     }
 }
 

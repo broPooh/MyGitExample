@@ -55,5 +55,48 @@ extension URLSession {
             }
         }.resume()
     }
+    
+    
+    static func requestDelegate(_ session: URLSession, endpoint: URLRequest) {
+        session.dataTask(with: endpoint).resume()
+    }
+    
+    static func requestDelegateHandler<T: Codable>(_ session: URLSession, endpoint: URLRequest, completion: @escaping (Result<T, GitHupAPISearchError>) -> ()) {
+        session.dataTask(with: endpoint) { data, response, error in
+            DispatchQueue.main.async {
+                
+                guard error == nil else {
+                    completion(.failure((.failed)))
+                    return
+                }
+                
+                guard let data = data else {
+                    completion(.failure((.noData)))
+                    return
+                }
+                
+                guard let response = response as? HTTPURLResponse else {
+                    completion(.failure((.invalidResponse)))
+                    return
+                }
+                
+                
+                guard response.statusCode == GitHubStatusCode.ok.rawValue else {
+                    completion(.failure(GitHupAPISearchError(rawValue: response.statusCode) ?? .unknown))
+                    return
+                }
+                
+                do {
+                    let decoder = JSONDecoder()
+                    decoder.keyDecodingStrategy = .convertFromSnakeCase
+                    let data = try decoder.decode(T.self, from: data)
+                    completion(.success(data))
+                } catch {
+                    completion(.failure((.invalidData)))
+                }
+            }
+        }.resume()
+    }
+
 
 }

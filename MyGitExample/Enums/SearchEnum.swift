@@ -7,6 +7,16 @@
 
 import Foundation
 
+enum SearchDelayType {
+    case auto
+    case normal
+}
+
+enum SearchType {
+    case search
+    case fetch
+}
+
 enum SearchQuery: Int {
     static let nextPage = 1
     static let queryDelay = 1

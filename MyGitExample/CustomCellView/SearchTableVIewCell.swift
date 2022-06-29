@@ -10,7 +10,7 @@ import UIKit
 import Then
 import SnapKit
 
-final class SearchTableVIewCell: UITableViewCell, ViewRepresentable {
+final class SearchTableViewCell: UITableViewCell, ViewRepresentable {
    
     let userImageView = UIImageView().then {
         $0.layer.cornerRadius = $0.bounds.width / 2
@@ -71,8 +71,9 @@ final class SearchTableVIewCell: UITableViewCell, ViewRepresentable {
         }
     }
     
-    func configure() {
-        
+    func configure(item: Item) {
+        userImageView.setImage(imageUrl: item.avatarURL)
+        nameLabel.text = item.login
     }
     
 }
