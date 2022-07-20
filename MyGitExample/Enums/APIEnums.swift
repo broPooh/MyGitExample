@@ -34,6 +34,7 @@ enum GitHubStatusCode: Int {
 enum GitHupAPISearchError: Int, Error {
 
     case notModified = 304
+    case unAuthorization = 401
     case notFound = 404
     case validationFailed = 422
     case unavailable = 503
@@ -52,6 +53,7 @@ extension GitHupAPISearchError {
     var errorDescription: String {
         switch self {
         case .notModified: return "304: Not Modified"
+        case .unAuthorization: return "401: Authorization Error"
         case .notFound: return "404: Not Found"
         case .validationFailed: return "422: Validation Failed"
         case .unavailable: return "503: Unavailable"

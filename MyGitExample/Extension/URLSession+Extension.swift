@@ -38,6 +38,7 @@ extension URLSession {
                     return
                 }
                 
+                print(response)
                 
                 guard response.statusCode == GitHubStatusCode.ok.rawValue else {
                     completion(.failure(GitHupAPISearchError(rawValue: response.statusCode) ?? .unknown))
@@ -46,7 +47,7 @@ extension URLSession {
                 
                 do {
                     let decoder = JSONDecoder()
-                    decoder.keyDecodingStrategy = .convertFromSnakeCase
+                    //decoder.keyDecodingStrategy = .convertFromSnakeCase
                     let data = try decoder.decode(T.self, from: data)
                     completion(.success(data))
                 } catch {

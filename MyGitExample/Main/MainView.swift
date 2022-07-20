@@ -45,6 +45,10 @@ final class MainView: BaseUIView {
         addSubview(customTabBar)
         addSubview(searchBar)
         addSubview(searchTableView)
+        
+        
+    
+        
     }
     
     override func setupConstraints() {

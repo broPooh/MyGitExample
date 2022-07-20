@@ -44,6 +44,7 @@ final class MainViewController: BaseViewController {
     func tableViewConfig() {
         mainView.searchTableView.delegate = self
         mainView.searchTableView.dataSource = self
+        mainView.searchTableView.prefetchDataSource = self
     }
     
     func searchBarConfig() {
@@ -51,6 +52,7 @@ final class MainViewController: BaseViewController {
     }
     
     private func bind() {
+        receivedData = Data()
         viewModel.gitHubResponse.bind { response in
             self.mainView.searchTableView.reloadData()
         }
@@ -61,18 +63,15 @@ final class MainViewController: BaseViewController {
     }
     
     private func hideKeyboard() {
-        //view.endEditing(true)
         mainView.searchBar.resignFirstResponder()
     }
     
     private func searchUsers(query: String, delayType: SearchDelayType) {
-        // 검색어 입력이 들어왔을때 이전 검색이 있으면, 검색 호출을 cancel
         requestSearchWorkItem?.cancel()
         if (checkNetworkValue && !query.isEmpty && viewModel.query != query && !viewModel.isLoading.value) {
             requestSearchWorkItem = DispatchWorkItem { [weak self] in
                 self?.hideKeyboard()
-                //self?.viewModel.searchUsersDelegate(query: query, delegate: self!, type: .search)
-                self?.viewModel.searchUsers(query: query, delegate: self!, type: .search)
+                self?.viewModel.searchUsersDelegate(query: query, delegate: self!, type: .search)
             }
                         
             switch delayType {
@@ -89,6 +88,12 @@ final class MainViewController: BaseViewController {
             viewModel.searchUsersDelegate(query: viewModel.query, delegate: self, type: .fetch)
         }
     }
+    
+    func apiResult(completion: (Result<GitHubResponse, GitHupAPISearchError>) -> ()) {
+        
+    }
+    
+    
         
 }
 
@@ -100,7 +105,21 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var data = viewModel.gitHubResponse.value.items[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: SearchTableViewCell.reuseIdentifier, for: indexPath) as! SearchTableViewCell
+        
+        cell.favoriteButtonAction = {
+            print("click")
+            if GitItemRealmManager.shared.saveCheck(id: data.id) {
+                guard let realmItem = GitItemRealmManager.shared.loadData(id: data.id) else { return }
+                realmItem.favorite.toggle()
+                GitItemRealmManager.shared.updateData(data: realmItem)
+            } else {
+                GitItemRealmManager.shared.saveData(data: GitItem(id: data.id, login: data.login, avatarURL: data.avatarURL, url: data.url, createAt: Date(), favorite: true))
+            }
+        }
+        
+        cell.configure(item: data)
         return cell
     }
     
@@ -108,7 +127,6 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         return 100
     }
     
-
         
 }
 
@@ -128,6 +146,18 @@ extension MainViewController: UISearchBarDelegate {
     
 }
 
+// MARK: - CollectionView Prefetcing
+extension MainViewController: UITableViewDataSourcePrefetching {
+    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+        for indexPath in indexPaths {
+            if viewModel.gitHubResponse.value.items.count - 1 == indexPath.row && viewModel.gitHubResponse.value.items.count < viewModel.gitHubResponse.value.totalCount {
+                fetchUsers()
+            }
+        }
+    }
+    
+}
+
 
 extension MainViewController: URLSessionDataDelegate {
 
@@ -143,26 +173,28 @@ extension MainViewController: URLSessionDataDelegate {
     
     //서버에서 데이터를 받을 때마다 반복적으로 호출
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
+        print(data)
         self.receivedData?.append(data) //받아오는 데이터를 하나로 합쳐주기
     }
     
     func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
-        if let error = error, let _ = error as? GitHupAPISearchError {
+        print("End")
+        if let error = error {
+            print(error)
+            viewModel.isLoading.value = false
             let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
             presentAlert(title: "실패", message: "에러가 발생했습니다.", alertActions: okAction)
         } else if let receivedData = self.receivedData {
-            print(receivedData)
             do {
                 let decoder = JSONDecoder()
-                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                //decoder.keyDecodingStrategy = .convertFromSnakeCase
                 let data = try decoder.decode(GitHubResponse.self, from: receivedData)
                 viewModel.isLoading.value = false
                 viewModel.gitHubResponse.value = data
-                print(data)
-                //completion(.success(data))
             } catch {
+                viewModel.isLoading.value = false
                 let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
-                presentAlert(title: "실패", message: "파싱 에러가 발생했습니다.", alertActions: okAction)
+                self.presentAlert(title: "실패", message: "파싱 에러가 발생했습니다.", alertActions: okAction)
             }
         }
     }

@@ -12,4 +12,5 @@ enum SystemImage: String {
     case icCancel = "icCancel"
     case xmark
     case fillStar = "star.fill"
+    case star
 }

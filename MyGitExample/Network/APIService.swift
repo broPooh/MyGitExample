@@ -27,7 +27,7 @@ final class APIService {
     }
     
     static func searchUsersDelegate(query: String, page: Int, delegate: URLSessionDataDelegate) {
-        print("APIService 검색 호출")
+        //print("APIService 검색 호출")
         guard let compoenet = makeURLComponents(url: Endpoint.searchUser.urlString, params: [
             "q": "\(query) in:name",
             "page" : "\(page)",
@@ -66,15 +66,9 @@ final class APIService {
         var request = URLRequest(url: component.url!)
         request.httpMethod = method.rawValue
         
-        
-        //for each로 해결
-//        _ = headers.map { (key, value) in
-//            //setValue와 addValue의 차이?
-//            request.addValue(key, forHTTPHeaderField: value)
-//        }
-        
         headers.forEach { (key, value) in
-            request.addValue(key, forHTTPHeaderField: value)
+            request.addValue(value, forHTTPHeaderField: key)
+            //request.setValue(key, forHTTPHeaderField: value)
         }
     
         return request

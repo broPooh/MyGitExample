@@ -28,7 +28,7 @@ struct Config {
 //        guard let githupToken = Config.infoDictionary[PlistKeys.githupToken.rawValue] as? String else {
 //            fatalError("API Key not set in plist for this environment")
 //        }
-        let githupToken = "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"
+        let githupToken = "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"
         return githupToken
     }()
 }
